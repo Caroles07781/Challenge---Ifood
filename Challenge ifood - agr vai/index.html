@@ -14,7 +14,8 @@
     <!-- Chamada do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
     <!-- Linkar CSS -->
@@ -69,7 +70,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#historico">Rentabilidade</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <button class="btn-contato">
+                            <i class="fa-solid fa-phone-volume"></i> Contato
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -81,13 +84,18 @@
     <section class="container my-5 sobre" id="sobre">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-lg-6">
-                <h3 class="my-title display-5 my-4">Bem-Vindo!</h3>
+                <p class="fs-1">Bem-Vindo!</p>
                 <h3 class="mb-4">Nome do Restaurante</h3>
-                <div class="red-bar"></div>
-                <h5 class="mb-4">
-                Aqui você tem total controle
-                <br>
-                financeiro de seu restaurante.
+                <h5 class="mb-4 aqui-voc-tem-total-controle-financeiro-de-seu-restaurante">
+                    <div class="container">
+                        <div class="reb-bar"></div>
+                        <div class="text-content">
+                            <p>Aqui você tem total controle financeiro de seu restaurante.
+                            <br>
+                            financeiro de seu restaurante.
+                            </p>
+                        </div>
+                    </div>
                 </h5>
             </div>
             <div class="col-lg-6 text-center">
@@ -98,405 +106,209 @@
     <!------------- Fim Bem-vindo ------------->
 
     <!------------- Filtro por Período ------------->
-    <section class="container my-5" id="investimentos">
-        <div class="container">
-            <h2>Filtro por Período</h2>
-            <table class="table table-striped table-hover table-bordered border-secondary-subtle text-center">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Nome do Investimento</th>
-                        <th>Valor Investido</th>
-                        <th>Data de Compra</th>
-                        <th>Rentabilidade</th>
-                        <th>Info</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Serviço 1</td>
-                        <td>R$ 1.000,00</td>
-                        <td>01/01/2023</td>
-                        <td>5,00%</td>
-                        <td>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço 2</td>
-                        <td>R$ 500,00</td>
-                        <td>15/02/2023</td>
-                        <td>10,00%</td>
-                        <td>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço 3</td>
-                        <td>R$ 2.000,00</td>
-                        <td>01/03/2023</td>
-                        <td>8,00%</td>
-                        <td>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço 4</td>
-                        <td>R$ 500,00</td>
-                        <td>05/03/2023</td>
-                        <td>1,00%</td>
-                        <td>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço 5</td>
-                        <td>R$ 30,00</td>
-                        <td>10/06/2023</td>
-                        <td>3,00%</td>
-                        <td>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
-    <br>
     <section class="container my-5" id="historico">
         <div class="container">
-            <h2>Histórico</h2>
+            <h2>Filtro por Período</h2>
             <fieldset>
                 <label for="data">Filtrar por data</label>
                 <input type="date" id="data" name="data">
             </fieldset>
             <br>
-            <table class="table table-striped table-hover table-bordered border-secondary-subtle text-center">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Data</th>
-                        <th>Tipo de Transação</th>
-                        <th>Valor</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
+            <table
+                class="table caption-top table-striped table-hover table-bordered border-secondary-subtle text-center border border-danger">
+                <tr>
+                    <th>Valor Mês</th>
+                    <th>Data</th>
+                </tr>
+                <tr>
+                    <td>R$ 2.340,00</td>
+                    <td>11/01/2024</td>
+                </tr>
+                <tr>
+                    <td>R$ 1.300,00</td>
+                    <td>11/01/2024</td>
+                </tr>
+                <tr>
+                    <td>R$ 1.7890,00</td>
+                    <td>11/01/2024</td>
+                </tr>
+                <tr>
+                    <td>R$ 1.354,87</td>
+                    <td>12/01/2024</td>
+                </tr>
+                <tr>
+                    <td>R$ 1.654,34</td>
+                    <td>12/01/2024</td>
+                </tr>
+                </tbody>
+            </table>
+    </section>
+    <br>
+    <!------------- Fim Filtro por Período ------------->
+
+    <!------------- Filtro por Categoria ------------->
+    <section class="container my-5" id="historico">
+        <div class="container">
+            <h2>Filtro por Categoria</h2>
+            <fieldset>
+                <label for="atuacao">Filtrar por Combo</label>
+                <select name="atuacao" id="atuacao">
+                    <option value="0" disabled selected>Selecione sua opção</option>
+                    <option value="1">Combo 01</option>
+                    <option value="2">Combo 02</option>
+                    <option value="3">Combo 03</option>
+                    <option value="4">Combo 04</option>
+                    <option value="5">Combo 05</option>
+                </select>
+            </fieldset>
+            <br>
+            <table
+                class="table table-striped table-hover table-bordered border-secondary-subtle text-center border border-danger">
+                <tr>
+                    <th>Item</th>
+                    <th>Valor Mês</th>
+                    <th>Quantidade</th>
+                </tr>
                 <tbody>
                     <tr>
-                        <td>01/01/2023</td>
-                        <td>Compra</td>
-                        <td>R$ 1.000,00</td>
-                        <td>Serviço 1</td>
+                        <td>Combo 1</td>
+                        <td>R$ 10,00</td>
+                        <td>100</td>
                     </tr>
                     <tr>
-                        <td>15/02/2023</td>
-                        <td>Compra</td>
-                        <td>R$ 500,00</td>
-                        <td>Serviço 2</td>
+                        <td>Combo 2</td>
+                        <td>R$ 35,00</td>
+                        <td>50</td>
                     </tr>
                     <tr>
-                        <td>01/03/2023</td>
-                        <td>Compra</td>
-                        <td>R$ 2.000,00</td>
-                        <td>Serviço 3</td>
+                        <td>Combo 3</td>
+                        <td>R$ 05,00</td>
+                        <td>200</td>
                     </tr>
                     <tr>
-                        <td>05/03/2023</td>
-                        <td>Compra</td>
-                        <td>R$ 500,00</td>
-                        <td>Serviço 4</td>
+                        <td>Combo 4</td>
+                        <td>R$ 08,00</td>
+                        <td>50</td>
                     </tr>
                     <tr>
-                        <td>10/06/2023</td>
-                        <td>Compra</td>
-                        <td>R$ 30,00</td>
-                        <td>Serviço 5</td>
+                        <td>Combo 5</td>
+                        <td>R$ 22,00</td>
+                        <td>03</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
     <br>
-    <section class="container my-5" id="servicos">
-        <div class="container">
-            <h2>Serviços Contratados</h2>
-            <fieldset>
-                <label for="atuacao">Filtrar por Serviço</label>
-                <select name="atuacao" id="atuacao">
-                    <option value="0" disabled selected>Selecione sua opção</option>
-                    <option value="1">Serviço 01</option>
-                    <option value="2">Serviço 02</option>
-                    <option value="3">Serviço 03</option>
-                    <option value="4">Serviço 04</option>
-                    <option value="5">Serviço 05</option>
-                </select>
-            </fieldset>
-            <br>
-            <table class="table table-striped table-hover table-bordered border-secondary-subtle text-center">
-                <thead class="table-dark">
+    <!------------- Fim Filtro por Categoria ------------->
+
+    <!-------------- Rentabilidade -------------->
+    <section class="container my-5" id="rentabilidade">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-12 bg-red-2 m-0 pe-0"></div>
+    <h2 class="my-1 my-title mt-4">Rentabilidade dos Itens</h2>
+<div class="container-grafico-tabela">
+        <div class="grafico">
+            <!-- Código do gráfico -->
+            <canvas id="meuGrafico" width="400" height="400"></canvas>
+        </div>
+        <div class="tabela">
+            <!-- Código da tabela -->
+            <table>
+                <thead>
                     <tr>
-                        <th>Serviço</th>
-                        <th>Data de Contrato</th>
-                        <th>Valor Mensal</th>
-                        <th>Status</th>
-                        <th>Ações</th>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Serviço 1</td>
-                        <td>01/02/2023</td>
-                        <td>R$ 10,00</td>
-                        <td>Ativo</td>
-                        <td>
-                            <button type="button" class="btn btn-outline-primary btn-sm">Ativar</button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">Desativar</button>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
+                        <td>Dado 1</td>
+                        <td>Dado 2</td>
                     </tr>
                     <tr>
-                        <td>Serviço 2</td>
-                        <td>15/03/2023</td>
-                        <td>R$ 35,00</td>
-                        <td>Ativo</td>
-                        <td>
-                            <button type="button" class="btn btn-outline-primary btn-sm">Ativar</button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">Desativar</button>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço 3</td>
-                        <td>01/04/2023</td>
-                        <td>R$ 50,00</td>
-                        <td>Ativo</td>
-                        <td>
-                            <button type="button" class="btn btn-outline-primary btn-sm">Ativar</button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">Desativar</button>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço 4</td>
-                        <td>02/05/2023</td>
-                        <td>R$ 5,00</td>
-                        <td>Ativo</td>
-                        <td>
-                            <button type="button" class="btn btn-outline-primary btn-sm">Ativar</button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">Desativar</button>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Serviço 5</td>
-                        <td>10/06/2023</td>
-                        <td>R$ 30,00</td>
-                        <td>Ativo</td>
-                        <td>
-                            <button type="button" class="btn btn-outline-primary btn-sm">Ativar</button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm">Desativar</button>
-                            <button type="button" class="btn btn btn-outline-info btn-sm"><i
-                                    class="fa-solid fa-circle-info"></i></button>
-                        </td>
+                        <td>Dado 3</td>
+                        <td>Dado 4</td>
                     </tr>
                 </tbody>
             </table>
-            <button type="button" class="btn btn-primary btn-sm text-light mb-0">Adicionar Serviço <i
-                    class="fa-solid fa-plus"></i></button>
-            <button type="button" class="btn btn-primary btn-sm text-light mb-0">Deletar Serviço <i
-                    class="fa-solid fa-minus"></i></button>
-        </div>
-
-    </section>
-    <!----------- Fim Filtro por Período ----------->
-
-    <!-------------- Relatório -------------->
-    <section class="container my-5" id="relatorio">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-lg-12 bg-blue-2 m-0 pe-0">
-                <h4 class="my-1 my-title mt-4">Relatório</h4>
-                <h4 class="my-title my-4">Sua saúde financeira está muito boa, continue assim! Saldo Total: R$10.000
-                </h4>
-                <p class="mb-5">Para chegar até sua meta principal, você deve investir em pelo menos mais dois serviços
-                    para que até o final do ano tenha a quantia desejada.</p>
-                <a href="#servicos" class="btn btn-primary btn-lg text-light mb-5">Investir agora <i
-                        class="fa-solid fa-arrow-right-long ms-1"></i></a>
-                <canvas id="myChart"></canvas>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        var ctx = document.getElementById('myChart').getContext('2d');
-                        var myChart = new Chart(ctx, {
-                            type: 'line', // Tipo de gráfico: barra
-                            data: {
-                                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'], // Etiquetas do eixo X
-                                datasets: [{
-                                    label: 'Investimentos Mensais',
-                                    data: [1200, 1900, 3000, 500, 2000, 3000], // Dados do gráfico
-                                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                                    borderColor: 'rgba(54, 162, 235, 1)',
-                                    borderWidth: 1
-                                }]
-                            },
-                            options: {
-                                scales: {
-                                    y: {
-                                        beginAtZero: true
-                                    }
-                                }
-                            }
-                        });
-                    });
-                </script>
-                <h4 class="my-1 my-title mt-4">Dicas</h4>
-                <br>
-                <p class="mb-2">Sugestões de corte de gastos: Reduzir gastos com alimentação fora de casa.</p>
-                <p class="mb-2">Recomendações de investimentos: Considere investir em Tesouro Direto IPCA+ para proteger
-                    seu capital da inflação.</p>
-                <p class="mb-2">Planos de Pagamento de Dívidas: Crie um plano para quitar suas dívidas mais caras.</p>
-            </div>
-        </div>
-    </section>
-    <!------------ Fim Relatório ------------>
-
-    <!-------------- Modal -------------->
-    <div class="modal fade" id="caseMeta1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleMetaLabel">Meta 1</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h2 class="mb=3">Descrição da Meta</h2>
-                    <p>Viajem ao redor do mundo - mínimo R$30.000</p>
-                </div>
-            </div>
         </div>
     </div>
-    <div class="modal fade" id="caseMeta2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleMetaLabel">Meta 2</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h2 class="mb=3">Descrição da Meta</h2>
-                    <p>Carro novo - mínimo R$25.000</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="caseMeta3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleMetaLabel">Meta 3</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h2 class="mb=3">Descrição da Meta</h2>
-                    <p>Móveis novos - mínimo R$5.000</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------------ Fim Modal ------------>
 
-    <!------------- Contato ------------->
-    <section class="container-fluid bg-blue-2 mt-5" id="contato">
-        <div class="container py-5">
-            <h4 class="my-title text-center">Contato</h4>
-            <h3 class="text-center my-title mb-4">Veja como você pode falar conosco</h3>
-            <div class="row mt-5">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6 my-4 text-center">
-                            <p><i class="fa-solid fa-location-dot icon-contato"></i></p>
-                            <h3>Endereço</h3>
-                            <p>
-                                Rua. Exemplo, xxx <br>
-                                São Paulo -SP
-                            </p>
-                        </div>
-                        <div class="col-lg-6 my-4 text-center">
-                            <p><i class="fa-solid fa-phone icon-contato"></i></p>
-                            <h3>Telefone</h3>
-                            <p>(11) xxxx-xxxx <br>
-                                (11) xxxx-xxxx</p>
-                        </div>
-                        <div class="col-lg-6 my-4 text-center">
-                            <p><i class="fa-solid fa-envelope icon-contato"></i></p>
-                            <h3>Email</h3>
-                            <p>
-                                exemplo@email.com.br
-                            </p>
-                        </div>
-                        <div class="col-lg-6 my-4 text-center">
-                            <p><i class="fa-solid fa-clock icon-contato"></i></p>
-                            <h3>Atendimento</h3>
-                            <p>
-                                Segunda - Sexta <br>
-                                08:00 - 21:00
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <form action="">
-                        <div class="row text-start">
-                            <div class="col-lg-6 my-3">
-                                <label for="nome" class="form-label">Seu nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                            </div>
-
-                            <div class="col-lg-6 my-2">
-                                <label for="email" class="form-label">Seu email</label>
-                                <input type="text" class="form-control" id="email" placeholder="Seu email">
-                            </div>
-
-                            <div class="col-lg-6 my-2">
-                                <label for="fone" class="form-label">Seu telefone</label>
-                                <input type="tel" class="form-control" id="fone" placeholder="(xx) xxxx-xxxx">
-                            </div>
-
-                            <div class="col-lg-6 my-2">
-                                <label for="mensagem" class="form-label">Assunto</label>
-                                <input type="text" class="form-control" id="mensagem" placeholder="Seu assunto">
-                            </div>
-
-                            <div class="col-lg-12 my-2">
-                                <label for="nome" class="form-label">Mensagem</label>
-                                <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem"
-                                    class="form-control"></textarea>
-                            </div>
-
-                            <div class="col-lg-12 my-2 d-flex justify-content-end">
-                                <button type="button" class="btn btn-primary">Enviar mensagem</button>
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!------------- Fim Contato ------------->
+    <!-- Script do gráfico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('meuGrafico').getContext('2d');
+        var meuGrafico = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'], // Etiquetas do eixo X
+                datasets: [{
+                    label: 'Valor Item Mês',
+                    data: [1200, 1900, 3000, 500, 2000, 3000], // Dados do gráfico
+                    backgroundColor: 'rgba(253, 3, 3, 0.2)', 
+                    borderColor: 'rgba(253, 3, 3, 1)', 
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>    
+    <!------------ Fim Rentabilidade ------------>
 
     <!--------------- Footer --------------->
-    <div class="footer">
-        <div class="footer-content">
-            <p>Todos os Direitos Reservados.</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="assets/images/ifoodlogo.png" alt="Logo iFood">
+                <p>Pede iFood Já</p>
+            </div>
+
+            <div class="footer-section useful-links">
+                <h3>Useful links</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Main Menu</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#sobre">Home</a></li>
+                    <li><a href="#valores">Filtrar por Período</a></li>
+                    <li><a href="#investimentos">Filtrar por Categoria</a></li>
+                    <li><a href="#historico">Rentabilidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-us">
+                <h3>Contate-nos</h3>
+                <ul>
+                    <li><a>example@email.com</a></li>
+                    <li><a>+64 958 248 966</a></li>
+                    <li><a>Social media</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+
+        <div class="footer-bottom">
+            <div class="col-md-4">
+                <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-square-youtube"></i></a>
+            </div>
+            <p>Copyright © 2023 Dscode | All rights reserved</p>
+        </div>
     <!------------- Fim Footer ------------->
 
     <!-- Chamado do JavaScript -->
