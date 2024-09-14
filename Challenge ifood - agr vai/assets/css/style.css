@@ -1,0 +1,192 @@
+css
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --bg-blue-1: #11429e;
+    --bg-blue-2: #F6F9FF;
+    --bg-blue-3: #6583b9;
+    --margin-top: 100px;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    color: var(--bg-blue-1);
+    font-weight: 800;
+}
+
+.logo-icon {
+    color: var(--bg-blue-1);
+}
+
+.my-mt {
+    margin-top: var(--margin-top);
+}
+
+.navbar-brand.logo-text {
+    font-size: 2rem;
+    color: var(--bg-blue-1);
+}
+
+.nav-item a {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.my-tittle {
+    color: var(--bg-blue-1);
+    font-weight: 700;
+}
+
+.bg-blue-2 {
+    background-color: var(--bg-blue-2);
+}
+
+.sobre {
+    min-height: 60dvh;
+}
+
+.icon {
+    font-size: 60px;
+    color: var(--bg-blue-1);
+    margin: 24px 0;
+    transition: .5s;
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    background-color: var(--bg-blue-2);
+}
+
+.card:hover .icon {
+    transform: scale(1.5);
+}
+
+.icon-social,
+.icon-contato {
+    font-size: 2rem;
+    color: var(--bg-blue-1);
+    transition: .5s;
+}
+
+.icon-social:hover {
+    color: var(--bg-blue-3);
+}
+
+textarea {
+    resize: none;
+    height: 130px;
+}
+
+@media(max-width:959px) {
+    #sobre{
+        text-align: center;
+    }
+}
+
+/* Estilos gerais da tabela */
+table {
+    background-color: var(--bg-blue-2);
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    background-color: var(--bg-blue-2);
+}
+
+#investimentos {
+    background-color: var(--bg-blue-2);
+}
+
+#historico {
+    background-color: var(--bg-blue-2);
+}
+
+#servicos {
+    background-color: var(--bg-blue-2);
+}
+
+#relatorio {
+    background-color: var(--bg-blue-2);
+}
+
+/* Estilos adicionais para a tabela de histórico */
+table#historico {
+    margin-top: 20px;
+}
+
+/* Estilos específicos para campos de data e seletores */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+input[type="date"], select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input[type="date"]:focus, select:focus {
+    border-color: #11429e;
+    outline: none;
+}
+
+/* Estilos para modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #11429e;
+    color: white;
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    justify-content: center;
+}
+
+.footer {
+    background-color: var(--bg-blue-1);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "copyright";
+}
+
+.footer-content {
+    grid-area: copyright;
+}
+
+/* Estilos para a barra vermelha */
+.red-bar {
+  width: 10px;
+  height: 100%;
+  background-color: #fd0303;
+  position: absolute;
+  left: 153px; /* Ajuste para a posição correta no layout */
+  top: 528px; /* Ajuste para a posição correta no layout */
+}
