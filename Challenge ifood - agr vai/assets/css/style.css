@@ -1,24 +1,29 @@
-css
-
-* {
-    font-family: 'Open Sans', sans-serif;
+css * {
+    font-family: "Inter", sans-serif;
 }
 
 :root {
-    --bg-blue-1: #11429e;
-    --bg-blue-2: #F6F9FF;
-    --bg-blue-3: #6583b9;
+    --bg-red-1: #fd0303;
     --margin-top: 100px;
+}
+
+.aqui-voc-tem-total-controle-financeiro-de-seu-restaurante {
+    position: relative;
+    height: 0px;
+}
+
+a.social-icons {
+    color: var(--bg-red-1);
 }
 
 .logo-text {
     font-size: 1.8rem;
-    color: var(--bg-blue-1);
+    color: var(--bg-red-1);
     font-weight: 800;
 }
 
 .logo-icon {
-    color: var(--bg-blue-1);
+    color: var(--bg-red-1);
 }
 
 .my-mt {
@@ -27,7 +32,7 @@ css
 
 .navbar-brand.logo-text {
     font-size: 2rem;
-    color: var(--bg-blue-1);
+    color: var(--bg-red-1);
 }
 
 .nav-item a {
@@ -36,12 +41,8 @@ css
 }
 
 .my-tittle {
-    color: var(--bg-blue-1);
+    color: var(--bg-red-1);
     font-weight: 700;
-}
-
-.bg-blue-2 {
-    background-color: var(--bg-blue-2);
 }
 
 .sobre {
@@ -50,7 +51,7 @@ css
 
 .icon {
     font-size: 60px;
-    color: var(--bg-blue-1);
+    color: var(--bg-red-1);
     margin: 24px 0;
     transition: .5s;
 }
@@ -60,7 +61,7 @@ css
 }
 
 .card:hover {
-    background-color: var(--bg-blue-2);
+    background-color: var(--bg-red-1);
 }
 
 .card:hover .icon {
@@ -70,12 +71,38 @@ css
 .icon-social,
 .icon-contato {
     font-size: 2rem;
-    color: var(--bg-blue-1);
+    color: var(--bg-red-1);
     transition: .5s;
 }
 
 .icon-social:hover {
-    color: var(--bg-blue-3);
+    color: var(--bg-red-1);
+}
+
+.btn-contato {
+    background-color: var(--bg-red-1);
+    /* Cor vermelha do iFood */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Ajuste o valor para arredondar mais ou menos */
+    border: none;
+    cursor: pointer;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contato:hover {
+    background-color: var(--bg-red-1);
+    /* Cor vermelha mais escura */
+}
+
+.btn-contato i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
 }
 
 textarea {
@@ -84,109 +111,275 @@ textarea {
 }
 
 @media(max-width:959px) {
-    #sobre{
+    #sobre {
         text-align: center;
     }
 }
 
 /* Estilos gerais da tabela */
 table {
-    background-color: var(--bg-blue-2);
     border-collapse: separate;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-table th, table td {
+/* Estilos para cabeçalhos */
+table th {
     padding: 12px 15px;
     text-align: center;
-    background-color: var(--bg-blue-2);
+    font-weight: bold;
 }
 
-#investimentos {
-    background-color: var(--bg-blue-2);
+/* Estilos para células */
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+    /* Cor do texto */
 }
 
-#historico {
-    background-color: var(--bg-blue-2);
+/* Estilos para linhas */
+table tbody tr {
+    border-bottom: 1px solid #ddd;
 }
 
-#servicos {
-    background-color: var(--bg-blue-2);
+/* Estilos para a primeira e última linha */
+table tbody tr:first-child {
+    border-top: 1px solid #ddd;
 }
 
-#relatorio {
-    background-color: var(--bg-blue-2);
-}
-
-/* Estilos adicionais para a tabela de histórico */
-table#historico {
-    margin-top: 20px;
-}
-
-/* Estilos específicos para campos de data e seletores */
-fieldset {
-    border: none;
-    margin-bottom: 20px;
-}
-
-input[type="date"], select {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    transition: border-color 0.3s;
-}
-
-input[type="date"]:focus, select:focus {
-    border-color: #11429e;
-    outline: none;
-}
-
-/* Estilos para modal */
-.modal-content {
-    border-radius: 10px;
-}
-
-.modal-header {
-    background-color: #11429e;
-    color: white;
+table tbody tr:last-child {
     border-bottom: none;
 }
 
-.modal-body {
-    padding: 20px;
-    font-size: 1rem;
+/* Estilos para a borda da tabela */
+table {
+    border-color: var(--bg-red-1);
+    /* Cor vermelha do iFood */
+}
+
+/* Estilos para bordas das células */
+table td,
+table th {
+    border: 1px solid #ddd;
+    /* Cor da borda das células */
 }
 
 /* Footer */
-.footer {
-    justify-content: center;
-}
-
-.footer {
-    background-color: var(--bg-blue-1);
-    color: #fff;
+footer {
+    background-color: white;
+    padding: 40px 0;
+    /* Aumenta o padding superior e inferior */
     text-align: center;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "copyright";
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-.footer-content {
-    grid-area: copyright;
+.footer .col-md-4 ul li a {
+    /* Estilo para os links */
+    color: #333;
+    /* Define a cor do texto como preto */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer .col-md-4 ul li a:hover {
+    /* Estilo para os links ao passar o mouse */
+    color: var(--bg-red-1);
+    /* Define a cor do texto como vermelho do iFood */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer-container {
+    max-width: 1200px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
+    /* Centraliza o container */
+    display: flex;
+    justify-content: space-between;
+    /* Ajusta o espaço entre as seções */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    /* Adiciona espaçamento interno nas laterais */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 200px;
+    /* Define uma largura mínima para as seções */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section.logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    /* Limita a largura do rodapé inferior */
+    margin: 20px auto 0;
+    /* Centraliza e adiciona espaçamento superior */
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* Distribui os elementos para os extremos */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Estilos para os ícones sociais no footer */
+.footer-bottom .social-icon {
+    font-size: 24px; /* Define o tamanho dos ícones */
+    color: var(--bg-red-1); /* Define a cor vermelha do iFood */
+    margin-right: 15px; /* Espaçamento entre os ícones */
+    transition: color 0.3s ease; /* Transição suave para hover */
+}
+
+.footer-bottom .social-icon:hover {
+    color: #333; /* Cor ao passar o mouse (hover) */
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    /* Alinha os ícones à esquerda */
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: var(--bg-red-1);
+}
+
+.footer-bottom p {
+    margin-top: 0;
+    text-align: right;
+    /* Alinha o copyright à direita */
+    flex: 1;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
 
 /* Estilos para a barra vermelha */
-.red-bar {
-  width: 10px;
-  height: 100%;
-  background-color: #fd0303;
-  position: absolute;
-  left: 153px; /* Ajuste para a posição correta no layout */
-  top: 528px; /* Ajuste para a posição correta no layout */
+.container {
+    margin: 20px 0; /* Margem para espaçamento */
+    position: relative; /* Necessário para o posicionamento absoluto da barra */
+}
+
+.reb-bar {
+    width: 9px; /* Largura da barra */
+    height: 100%; /* Altura da barra ajustável */
+    background-color: #ff0000; /* Cor da barra */
+    position: absolute; /* Faz a barra se posicionar de forma independente */
+    left: 0; /* Alinha a barra à esquerda do container */
+    top: 0; /* Alinha a barra ao topo */
+}
+
+.text-content {
+    padding-left: 4px; /* Espaço entre a barra e o texto */
+    font-size: 1.2rem; /* Tamanho do texto */
+    line-height: 1; /* Altura da linha para o espaçamento adequado */
+    display: inline-block; /* Garante que o texto ocupe o espaço necessário */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .text-content {
+        font-size: 1rem;
+    }
+}
+
+.container-grafico-tabela {
+    display: flex;
+    justify-content: center; /* Centraliza o gráfico e a tabela */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 40px; /* Espaçamento controlado entre o gráfico e a tabela */
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+.grafico {
+    flex: 1; /* O gráfico ocupará o espaço disponível */
+    max-width: 600px; /* Defina o máximo de largura que o gráfico deve ter */
+}
+
+.tabela {
+    flex: 1; /* A tabela ocupará o espaço disponível */
+    max-width: 400px; /* Defina o máximo de largura que a tabela deve ter */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }
