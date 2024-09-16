@@ -28,47 +28,37 @@
     <!-- Chamada do Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <style>
-        /* Estilos gerais da tabela */
-        table {
-            border-collapse: separate;
-            border-spacing: 0;
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-
 </head>
 
 <body>
 
     <!------------ Header ------------>
     <header class="container mt-3">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container">
                 <div class="col-lg-1 text-center">
-                    <img src="./assets/images/ifoodlogo.png" alt="Ilustração mulher com pratos" class="img-fluid">
+                    <a href="#home">
+                        <img src="./assets/images/ifoodlogo.png" alt="Logo iFood" class="img-fluid">
+                    </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="Toggle navigation"><i
-                        class="fa-solid fa-align-right fa-lg"></i>
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#valores">Filtrar por Período</a>
+                            <a class="nav-link" href="#filtrarperiodo">Filtrar por Período</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#investimentos">Filtrar por Categoria</a>
+                            <a class="nav-link" href="#filtrarcategoria">Filtrar por Categoria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#historico">Rentabilidade</a>
+                            <a class="nav-link" href="#rentabilidade">Rentabilidade</a>
                         </li>
                         <button class="btn-contato">
                             <i class="fa-solid fa-phone-volume"></i> Contato
@@ -81,14 +71,14 @@
     <!------------ Fim Header ------------>
 
     <!--------------- Bem-vindo --------------->
-    <section class="container my-5 sobre" id="sobre">
+    <section class="container my-5 home" id="home">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-lg-6">
-                <p class="fs-1">Bem-Vindo!</p>
-                <h3 class="mb-4">Nome do Restaurante</h3>
+                <p class="bem-vindo">Bem-Vindo!</p>
+                <h3 class="bem-vindo2">Nome do Restaurante</h3>
                 <h5 class="mb-4 aqui-voc-tem-total-controle-financeiro-de-seu-restaurante">
                     <div class="container">
-                        <div class="reb-bar"></div>
+                        <div class="red-bar"></div>
                         <div class="text-content">
                             <p>Aqui você tem total controle financeiro de seu restaurante.
                             <br>
@@ -106,16 +96,12 @@
     <!------------- Fim Bem-vindo ------------->
 
     <!------------- Filtro por Período ------------->
-    <section class="container my-5" id="historico">
-        <div class="container">
-            <h2>Filtro por Período</h2>
-            <fieldset>
-                <label for="data">Filtrar por data</label>
-                <input type="date" id="data" name="data">
-            </fieldset>
-            <br>
-            <table
-                class="table caption-top table-striped table-hover table-bordered border-secondary-subtle text-center border border-danger">
+    <h2 class="titulo-style filtro-categoria">Filtro por Período</h2>
+            <br>    
+    <section class="container my-5" id="filtrarperiodo">
+        <div class="filter-container">
+            <div class="table-style-periodo">
+                <table
                 <tr>
                     <th>Valor Mês</th>
                     <th>Data</th>
@@ -137,33 +123,38 @@
                     <td>12/01/2024</td>
                 </tr>
                 <tr>
-                    <td>R$ 1.654,34</td>
+                    <td>R$ 1.654,98</td>
                     <td>12/01/2024</td>
+                </tr>
+                <tr>
+                    <td>R$ 1.543,34</td>
+                    <td>13/01/2024</td>
                 </tr>
                 </tbody>
             </table>
+            <fieldset>
+                <label for="data">Filtrar por data</label>
+                <input type="date" id="data" name="data">
+            </fieldset>
+        </div>
     </section>
     <br>
     <!------------- Fim Filtro por Período ------------->
 
     <!------------- Filtro por Categoria ------------->
-    <section class="container my-5" id="historico">
-        <div class="container">
-            <h2>Filtro por Categoria</h2>
-            <fieldset>
-                <label for="atuacao">Filtrar por Combo</label>
-                <select name="atuacao" id="atuacao">
-                    <option value="0" disabled selected>Selecione sua opção</option>
-                    <option value="1">Combo 01</option>
-                    <option value="2">Combo 02</option>
-                    <option value="3">Combo 03</option>
-                    <option value="4">Combo 04</option>
-                    <option value="5">Combo 05</option>
-                </select>
-            </fieldset>
+    <h2 class="filtro-categoria">Filtro por Categoria</h2>
             <br>
+    <div class="content">
+        <!-- Imagem à esquerda -->
+        <div class="image-left">
+            <img src="assets/images/salada3.png" alt="Combo 1" class="combo-image fattoush-salad2">
+            <p class="combo-title">Combo 1</p>
+        </div>
+
+    <section class="container my-5" id="filtrarcategoria">
+        <div class="container">
+            <div class="table-style">
             <table
-                class="table table-striped table-hover table-bordered border-secondary-subtle text-center border border-danger">
                 <tr>
                     <th>Item</th>
                     <th>Valor Mês</th>
@@ -173,47 +164,73 @@
                     <tr>
                         <td>Combo 1</td>
                         <td>R$ 10,00</td>
-                        <td>100</td>
+                        <td>3</td>
                     </tr>
                     <tr>
                         <td>Combo 2</td>
                         <td>R$ 35,00</td>
-                        <td>50</td>
+                        <td>10</td>
                     </tr>
                     <tr>
                         <td>Combo 3</td>
                         <td>R$ 05,00</td>
-                        <td>200</td>
+                        <td>1</td>
                     </tr>
                     <tr>
                         <td>Combo 4</td>
                         <td>R$ 08,00</td>
-                        <td>50</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td>Combo 5</td>
                         <td>R$ 22,00</td>
-                        <td>03</td>
+                        <td>08</td>
+                    </tr>
+                    <tr>
+                        <td>Combo 6</td>
+                        <td>R$ 17,00</td>
+                        <td>06</td>
                     </tr>
                 </tbody>
             </table>
+            <fieldset></fieldset>
+                <label for="combo">Filtrar por Combo</label>
+                <select name="combo" id="combo">
+                    <option value="0" disabled selected>Selecione sua opção</option>
+                    <option value="1">Combo 01</option>
+                    <option value="2">Combo 02</option>
+                    <option value="3">Combo 03</option>
+                    <option value="4">Combo 04</option>
+                    <option value="5">Combo 05</option>
+                    <option value="6">Combo 06</option>
+                </select>
+            </fieldset>
         </div>
+        </div>
+            <!-- Imagem à direita -->
+    <div class="image-right">
+        <img src="assets/images/salada1 (2).png" alt="Combo 2" class="combo-image egg-salad">
+        <p class="combo-title">Combo 2</p>
+    </div>
+    </div>
     </section>
     <br>
     <!------------- Fim Filtro por Categoria ------------->
 
     <!-------------- Rentabilidade -------------->
+    <h2 class="filtro-categoria">Rentabilidade dos Itens</h2>
+    <br>
     <section class="container my-5" id="rentabilidade">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-lg-12 bg-red-2 m-0 pe-0"></div>
-    <h2 class="my-1 my-title mt-4">Rentabilidade dos Itens</h2>
-<div class="container-grafico-tabela">
+    
+        <div class="container-grafico-tabela">
         <div class="grafico">
-            <!-- Código do gráfico -->
-            <canvas id="meuGrafico" width="400" height="400"></canvas>
+            
+            <canvas id="meuGrafico" width="660" height="500"></canvas>
         </div>
-        <div class="tabela">
-            <!-- Código da tabela -->
+        <div class="table-style-rent">
+            
             <table>
                 <thead>
                     <tr>
@@ -275,6 +292,7 @@
                 }
             }
         });
+
     </script>    
     <!------------ Fim Rentabilidade ------------>
 
@@ -287,8 +305,8 @@
             </div>
 
             <div class="footer-section useful-links">
-                <h3>Useful links</h3>
-                <ul>
+                <h3 class="footer-title">Useful links</h3>
+                <ul class="links-style">
                     <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Eventos</a></li>
                     <li><a href="#">Blogs</a></li>
@@ -296,19 +314,19 @@
                 </ul>
             </div>
 
-            <div class="col-md-4">
-                <h4>Main Menu</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#sobre">Home</a></li>
-                    <li><a href="#valores">Filtrar por Período</a></li>
-                    <li><a href="#investimentos">Filtrar por Categoria</a></li>
-                    <li><a href="#historico">Rentabilidade</a></li>
+            <div class="footer-section main-menu">
+                <h3 class="footer-title">Main Menu</h3>
+                <ul class="list-unstyled links-style">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#filtrarperiodo">Filtrar por Período</a></li>
+                    <li><a href="#filtrarcategoria">Filtrar por Categoria</a></li>
+                    <li><a href="#rentabilidade">Rentabilidade</a></li>
                 </ul>
             </div>
 
             <div class="footer-section contact-us">
-                <h3>Contate-nos</h3>
-                <ul>
+                <h3 class="footer-title">Contate-nos</h3>
+                <ul class="links-style">
                     <li><a>example@email.com</a></li>
                     <li><a>+64 958 248 966</a></li>
                     <li><a>Social media</a></li>
@@ -323,7 +341,7 @@
                 <a href="#" class="social-icon"><i class="fa-brands fa-square-twitter"></i></a>
                 <a href="#" class="social-icon"><i class="fa-brands fa-square-youtube"></i></a>
             </div>
-            <p>Copyright © 2023 Dscode | All rights reserved</p>
+            <p class="copyright">Copyright © 2023 Dscode | All rights reserved</p>
         </div>
     <!------------- Fim Footer ------------->
 
