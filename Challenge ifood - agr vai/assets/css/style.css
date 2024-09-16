@@ -8,8 +8,17 @@ css * {
 }
 
 .aqui-voc-tem-total-controle-financeiro-de-seu-restaurante {
-    position: relative;
-    height: 0px;
+    color: #4a4a4a;
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 26px;
+    line-height: 170.5%;
+    font-weight: 500;
+    text-align: left;
+}
+
+.container-grafico-tabela {
+    margin-bottom: 130px;
 }
 
 a.social-icons {
@@ -30,6 +39,16 @@ a.social-icons {
     margin-top: var(--margin-top);
 }
 
+.navbar-nav .nav-link {
+    cursor:pointer; 
+    text-decoration: none; 
+    color: black; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--bg-red-1);
+}
+
 .navbar-brand.logo-text {
     font-size: 2rem;
     color: var(--bg-red-1);
@@ -45,7 +64,7 @@ a.social-icons {
     font-weight: 700;
 }
 
-.sobre {
+.home {
     min-height: 60dvh;
 }
 
@@ -105,124 +124,309 @@ a.social-icons {
     color: white;
 }
 
+.bem-vindo {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-ExtraBold", sans-serif;
+    line-height: 145.52%;
+    font-weight: 800;
+    font-size: 62px;
+    width: 640px;
+}
+
+.bem-vindo2 {
+    color: #000000;
+    font-family: "Inter-ExtraBold", sans-serif;
+    font-size: 50px;
+    line-height: 145.52%;
+    font-weight: 800;
+}
+
+.aqui-voc-tem-total-controle-financeiro-de-seu-restaurante {
+    color: #4a4a4a;
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 26px;
+    line-height: 170.5%;
+    font-weight: 500;
+    width: 622px;
+}
+
+.fattoush-salad2 {
+    width: 276px;
+    height: 276px;
+    left: 239px;
+    top: 2246px;
+    object-fit: cover;
+}
+
+.egg-salad {
+    width: 276px;
+    height: 278px;
+    left: 1228px;
+    right: 1000px;
+    top: 1480px;
+    object-fit: cover;
+}
+
+.filtro-categoria {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 50px;
+}
+
+.container-filtro {
+    grid-column: 2;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column; /* Arrumar os elementos verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    gap: 20px; /* Espaçamento entre o título e a tabela */
+}
+
 textarea {
     resize: none;
     height: 130px;
 }
 
 @media(max-width:959px) {
-    #sobre {
+    #home {
         text-align: center;
     }
 }
 
 /* Estilos gerais da tabela */
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.table-container {
+    text-align: center;
+    padding: 20px;
+    width: 400px; /* Ajustar a largura da tabela para ocupar o espaço disponível */
+    max-width: 400px; /* Limite máximo de largura da tabela */
+    align-items: center;
 }
 
-/* Estilos para cabeçalhos */
-table th {
-    padding: 12px 15px;
+.table-style-periodo {
+    width: 100%; /* Ajustar a largura da tabela para ocupar o espaço disponível */
+    border-collapse: collapse;
+    margin: 0 auto; /* Centralizar a tabela horizontalmente */
+    max-width: 400px;
+    font-family: "Inter", sans-serif;
+    border: 2px solid var(--bg-red-1);
+    border-radius: 1px; 
+    overflow: hidden; 
     text-align: center;
+    border-color: #fd0303;
+    border-radius: 9px;
+    border-width: 1px;
+    padding: 8px;
+    width: 400px;
+    height: 8%;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    align-items: center;
+}
+
+.table-style-rent {
+    width: 100%; /* Ajustar a largura da tabela para ocupar o espaço disponível */
+    border-collapse: collapse;
+    margin: 0 auto; /* Centralizar a tabela horizontalmente */
+    max-width: 400px;
+    font-family: "Inter", sans-serif;
+    border: 2px solid var(--bg-red-1);
+    border-radius: 1px; 
+    overflow: hidden; 
+    text-align: center;
+    border-color: #fd0303;
+    border-radius: 9px;
+    border-width: 1px;
+    padding: 8px;
+    width: 400px;
+    height: 8%;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    align-items: center;
+}
+
+.table-style {
+    width: 100%; /* Ajustar a largura da tabela para ocupar o espaço disponível */
+    border-collapse: collapse;
+    margin: 0 auto; /* Centralizar a tabela horizontalmente */
+    max-width: 400px;
+    font-family: "Inter", sans-serif;
+    border: 2px solid var(--bg-red-1);
+    border-radius: 1px; 
+    overflow: hidden; 
+    text-align: center;
+    border-color: #fd0303;
+    border-radius: 9px;
+    border-width: 1px;
+    padding: 8px;
+    width: 400px;
+    height: 8%;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    align-items: center;
+    margin-left: 440px;
+}
+
+.content {
+    display: flex; /* Organiza os elementos horizontalmente */
+    justify-content: center; /* Centraliza a tabela horizontalmente */
+    align-items: center; /* Alinha verticalmente ao centro */
+    width: 100%; /* Ocupa 100% da largura da seção */
+    gap: 40px; /* Espaçamento entre a imagem, tabela e a outra imagem */
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+    max-width: 400px;
+    font-family: "Inter", sans-serif;
+    border: 2px solid var(--bg-red-1);
+    border-radius: 1px; 
+    overflow: hidden; 
+    text-align: center;
+    align-items: center;
+}
+
+/* Cabeçalho da tabela */
+thead {
+    background-color: white;
     font-weight: bold;
 }
 
-/* Estilos para células */
-table td {
-    padding: 12px 15px;
+/* Células do cabeçalho */
+th {
+    color: #828282;
     text-align: center;
-    font-weight: normal;
-    color: #333;
-    /* Cor do texto */
+    font-family: "Inter-Black", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
 }
 
-/* Estilos para linhas */
-table tbody tr {
-    border-bottom: 1px solid #ddd;
+/* Estilo das células do corpo da tabela */
+tbody td {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--bg-red-1); 
+    border-right: 2px solid var(--bg-red-1); 
 }
 
-/* Estilos para a primeira e última linha */
-table tbody tr:first-child {
-    border-top: 1px solid #ddd;
+/* Remove a borda da última célula em cada linha */
+tbody td:last-child {
+    border-right: none;
 }
 
-table tbody tr:last-child {
-    border-bottom: none;
+/* Negrito na primeira coluna */
+tbody td:first-child {
+    font-weight: bold;
 }
 
-/* Estilos para a borda da tabela */
+/* Estilo ao passar o mouse */
+tbody tr:hover {
+    background-color: #f9f9f9; /* Alteração de cor ao passar o mouse */
+}
+
+/* Imagens das tabelas */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.image-left {
+    grid-column: 1;
+    position: absolute;
+    left: 209px;
+}
+
+.titulo-style {
+    text-align: center;
+}
+
+.table-style {
+    grid-column: 2; /* Segunda coluna */
+}
+
+.image-right {
+    grid-column: 3; /* Terceira coluna */
+}
+
 table {
-    border-color: var(--bg-red-1);
-    /* Cor vermelha do iFood */
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* Estilos para bordas das células */
-table td,
-table th {
+th, td {
     border: 1px solid #ddd;
-    /* Cor da borda das células */
+    padding: 10px;
+    text-align: center;
 }
+
+thead {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.combo-title {
+    font-weight: bold;
+    text-align: center;
+}
+
 
 /* Footer */
 footer {
     background-color: white;
     padding: 40px 0;
-    /* Aumenta o padding superior e inferior */
     text-align: center;
     font-family: Arial, sans-serif;
     color: #333;
 }
 
-.footer .col-md-4 ul li a {
-    /* Estilo para os links */
-    color: #333;
-    /* Define a cor do texto como preto */
-    text-decoration: none;
-    /* Remove o sublinhado */
-    font-weight: 400;
-    font-size: 1rem;
+.footer-title {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
 }
 
-.footer .col-md-4 ul li a:hover {
-    /* Estilo para os links ao passar o mouse */
-    color: var(--bg-red-1);
-    /* Define a cor do texto como vermelho do iFood */
-    text-decoration: underline;
-    /* Adiciona sublinhado ao passar o mouse */
+.links-style {
+    color: #555555;
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.copyright {
+    color: #555555;
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .footer-container {
     max-width: 1200px;
-    /* Limita a largura máxima */
     margin: 0 auto;
-    /* Centraliza o container */
     display: flex;
     justify-content: space-between;
-    /* Ajusta o espaço entre as seções */
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 0 20px;
-    /* Adiciona espaçamento interno nas laterais */
     text-align: left;
-    /* Alinha o texto à esquerda */
 }
 
 .footer-section {
     flex: 1;
     margin: 0 15px;
     min-width: 200px;
-    /* Define uma largura mínima para as seções */
-}
-
-.footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .footer-section ul {
@@ -239,10 +443,6 @@ footer {
     color: #333;
 }
 
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
 .footer-section.logo img {
     width: 80px;
     margin-bottom: 10px;
@@ -250,14 +450,11 @@ footer {
 
 .footer-bottom {
     max-width: 1200px;
-    /* Limita a largura do rodapé inferior */
     margin: 20px auto 0;
-    /* Centraliza e adiciona espaçamento superior */
-    border-top: 1px solid #ccc;
+    margin-top: 50px;
     padding-top: 15px;
     display: flex;
     justify-content: space-between;
-    /* Distribui os elementos para os extremos */
     align-items: center;
     flex-wrap: wrap;
     padding: 0 20px;
@@ -265,21 +462,20 @@ footer {
 
 /* Estilos para os ícones sociais no footer */
 .footer-bottom .social-icon {
-    font-size: 24px; /* Define o tamanho dos ícones */
-    color: var(--bg-red-1); /* Define a cor vermelha do iFood */
-    margin-right: 15px; /* Espaçamento entre os ícones */
-    transition: color 0.3s ease; /* Transição suave para hover */
+    font-size: 24px; 
+    color: var(--bg-red-1); 
+    margin-right: 15px; 
+    transition: color 0.3s ease; 
 }
 
 .footer-bottom .social-icon:hover {
-    color: #333; /* Cor ao passar o mouse (hover) */
+    color: #333; 
 }
 
 
 .social-icons {
     display: flex;
     justify-content: flex-start;
-    /* Alinha os ícones à esquerda */
 }
 
 .social-icons a {
@@ -290,7 +486,6 @@ footer {
 .footer-bottom p {
     margin-top: 0;
     text-align: right;
-    /* Alinha o copyright à direita */
     flex: 1;
 }
 
@@ -323,14 +518,15 @@ footer {
 
 /* Estilos para a barra vermelha */
 .container {
-    margin: 20px 0; /* Margem para espaçamento */
-    position: relative; /* Necessário para o posicionamento absoluto da barra */
+    margin: 20px 0; 
+    position: relative; 
+    text-align: left;
 }
 
-.reb-bar {
+.red-bar {
     width: 9px; /* Largura da barra */
     height: 100%; /* Altura da barra ajustável */
-    background-color: #ff0000; /* Cor da barra */
+    background-color: #fd0303; /* Cor da barra */
     position: absolute; /* Faz a barra se posicionar de forma independente */
     left: 0; /* Alinha a barra à esquerda do container */
     top: 0; /* Alinha a barra ao topo */
@@ -341,6 +537,7 @@ footer {
     font-size: 1.2rem; /* Tamanho do texto */
     line-height: 1; /* Altura da linha para o espaçamento adequado */
     display: inline-block; /* Garante que o texto ocupe o espaço necessário */
+    text-align: left;
 }
 
 /* Responsividade */
@@ -355,31 +552,8 @@ footer {
     justify-content: center; /* Centraliza o gráfico e a tabela */
     align-items: center; /* Alinha verticalmente ao centro */
     gap: 40px; /* Espaçamento controlado entre o gráfico e a tabela */
-    margin-top: 20px; /* Espaçamento acima */
 }
 
 .grafico {
-    flex: 1; /* O gráfico ocupará o espaço disponível */
-    max-width: 600px; /* Defina o máximo de largura que o gráfico deve ter */
-}
-
-.tabela {
-    flex: 1; /* A tabela ocupará o espaço disponível */
-    max-width: 400px; /* Defina o máximo de largura que a tabela deve ter */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-}
-
-th, td {
-    border: 1px solid #000;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
+    flex: 1;
 }
