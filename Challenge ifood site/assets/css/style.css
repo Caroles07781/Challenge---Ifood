@@ -192,9 +192,13 @@ textarea {
     height: 130px;
 }
 
-@media(max-width:959px) {
+@media(max-width:1050px) {
     #home {
         text-align: center;
+    }
+
+    div a img {
+        width: 25%;
     }
 }
 
@@ -544,6 +548,23 @@ footer {
 @media (max-width: 768px) {
     .text-content {
         font-size: 1rem;
+    }
+
+    div a img {
+        width: 25%;
+    }
+
+    .container-grafico-tabela {
+        flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+    }
+
+    .table-style-periodo, .table-style-rent {
+        width: 100%; /* Faz com que a tabela ocupe 100% da largura disponível */
+        max-width: none; /* Remove o limite máximo de largura */
+    }
+
+    .table-style {
+        margin-left: 0; /* Remove a margem à esquerda para alinhar corretamente */
     }
 }
 
