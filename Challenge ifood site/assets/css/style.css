@@ -75,6 +75,14 @@ section {
     margin-top: 5em;
 }
 
+#container-periodo {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+
 #container-categoria {
     display: flex;
     gap: 3em;
@@ -167,6 +175,10 @@ div.footer-bottom i{
     padding: 0.4em;
 }
 
+.footer-bottom .social-icon i {
+    font-size: 2em;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     #logo-ifood {
@@ -195,9 +207,13 @@ div.footer-bottom i{
         max-width: 100%;
     }
 
-    #container-categoria, .container-rent, .footer-container {
+    #container-categoria, .container-rent, .footer-container, #container-periodo {
         flex-direction: column;
         gap: 2em;
+    }
+
+    img.combo-image{
+        width: 60%;
     }
 
     #filtrarperiodo, #filtrarcategoria, #rentabilidade {
@@ -215,5 +231,20 @@ div.footer-bottom i{
 
     .titulo-filtro {
         font-size: 2em;
+    }
+
+    .footer-container {
+        margin-top: 8em;
+        margin-bottom: 3em;
+        display: flex;
+        gap: 5em;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .footer-bottom .social-icon i {
+        font-size: 1.5em;
+        padding: 0.1em;
     }
 }
