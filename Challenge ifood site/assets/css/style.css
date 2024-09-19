@@ -162,6 +162,11 @@ tr {
     margin-right: 20px;
 }
 
+div.footer-bottom i{
+    color: #fd0303;
+    padding: 0.4em;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     #logo-ifood {
