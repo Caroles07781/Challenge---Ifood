@@ -128,7 +128,7 @@ tr {
     margin-bottom: 3em;
     display: flex;
     gap: 5em;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
