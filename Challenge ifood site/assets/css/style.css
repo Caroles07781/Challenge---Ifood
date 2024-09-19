@@ -1,580 +1,214 @@
-css * {
+* {
     font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
     --bg-red-1: #fd0303;
-    --margin-top: 100px;
 }
 
-.aqui-voc-tem-total-controle-financeiro-de-seu-restaurante {
-    color: #4a4a4a;
-    text-align: left;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 26px;
-    line-height: 170.5%;
-    font-weight: 500;
-    text-align: left;
+div.container {
+    margin-left: 0;
 }
 
-.container-grafico-tabela {
-    margin-bottom: 130px;
+nav#menu {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
 }
 
-a.social-icons {
-    color: var(--bg-red-1);
+#menu-nav {
+    gap: 2em;
 }
 
-.logo-text {
-    font-size: 1.8rem;
-    color: var(--bg-red-1);
-    font-weight: 800;
-}
-
-.logo-icon {
-    color: var(--bg-red-1);
-}
-
-.my-mt {
-    margin-top: var(--margin-top);
-}
-
-.navbar-nav .nav-link {
-    cursor:pointer; 
-    text-decoration: none; 
-    color: black; 
-}
-
-.navbar-nav .nav-link:hover {
-    color: var(--bg-red-1);
-}
-
-.navbar-brand.logo-text {
-    font-size: 2rem;
-    color: var(--bg-red-1);
-}
-
-.nav-item a {
-    font-weight: 700;
-    font-size: 19px;
-}
-
-.my-tittle {
-    color: var(--bg-red-1);
-    font-weight: 700;
-}
-
-.home {
-    min-height: 60dvh;
-}
-
-.icon {
-    font-size: 60px;
-    color: var(--bg-red-1);
-    margin: 24px 0;
-    transition: .5s;
-}
-
-.card {
-    transition: .5s;
-}
-
-.card:hover {
-    background-color: var(--bg-red-1);
-}
-
-.card:hover .icon {
-    transform: scale(1.5);
-}
-
-.icon-social,
-.icon-contato {
-    font-size: 2rem;
-    color: var(--bg-red-1);
-    transition: .5s;
-}
-
-.icon-social:hover {
-    color: var(--bg-red-1);
+#logo-ifood {
+    width: 15vw;
 }
 
 .btn-contato {
-    background-color: var(--bg-red-1);
-    /* Cor vermelha do iFood */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    /* Ajuste o valor para arredondar mais ou menos */
     border: none;
-    cursor: pointer;
-    font-family: "Inter-SemiBold", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.btn-contato:hover {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
     background-color: var(--bg-red-1);
-    /* Cor vermelha mais escura */
-}
-
-.btn-contato i {
-    margin-right: 10px;
-    font-size: 20px;
     color: white;
+    white-space: nowrap;
 }
 
-.bem-vindo {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-ExtraBold", sans-serif;
-    line-height: 145.52%;
-    font-weight: 800;
-    font-size: 62px;
-    width: 640px;
+section {
+    padding-top: 6em;
 }
 
-.bem-vindo2 {
-    color: #000000;
-    font-family: "Inter-ExtraBold", sans-serif;
-    font-size: 50px;
-    line-height: 145.52%;
+#header-home {
+    font-size: 3.5em;
     font-weight: 800;
 }
 
-.aqui-voc-tem-total-controle-financeiro-de-seu-restaurante {
-    color: #4a4a4a;
-    text-align: left;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 26px;
-    line-height: 170.5%;
-    font-weight: 500;
-    width: 622px;
+#header-home2 {
+    font-size: 2.5em;
+    font-weight: 800;
 }
 
-.fattoush-salad2 {
-    width: 276px;
-    height: 276px;
-    left: 239px;
-    top: 2246px;
-    object-fit: cover;
+#paragrafo-home {
+    font-size: 1.2em;
+    max-width: 80%;
+    border-left: 8px solid var(--bg-red-1);
+    padding: 10px;
 }
 
-.egg-salad {
-    width: 276px;
-    height: 278px;
-    left: 1228px;
-    right: 1000px;
-    top: 1480px;
-    object-fit: cover;
+.titulo-filtro {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 2em;
+    border-bottom: 15px solid var(--bg-red-1);
+    border-radius: 20px;
 }
 
-.filtro-categoria {
-    color: #000000;
-    text-align: center;
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 50px;
-}
-
-.container-filtro {
-    grid-column: 2;
-}
-
-.filter-container {
+#filtrarperiodo, #filtrarcategoria, #rentabilidade {
     display: flex;
-    flex-direction: column; /* Arrumar os elementos verticalmente */
-    align-items: center; /* Centralizar horizontalmente */
-    gap: 20px; /* Espaçamento entre o título e a tabela */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
 }
 
-textarea {
-    resize: none;
-    height: 130px;
+#container-categoria {
+    display: flex;
+    gap: 3em;
 }
 
-@media(max-width:1050px) {
-    #home {
-        text-align: center;
-    }
-
-    div a img {
-        width: 25%;
-    }
+.container-rent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
 }
 
-/* Estilos gerais da tabela */
-.table-container {
-    text-align: center;
+#logo-footer {
+    max-width: 12vw;
+}
+
+#chart {
+    max-width: 30vw;
+}
+
+#table {
+    max-width: fit-content;
+    border: #fd0303;
+}
+
+.border-table {
+    border: 1px solid var(--bg-red-1);
+    border-radius: 10px;
     padding: 20px;
-    width: 400px; /* Ajustar a largura da tabela para ocupar o espaço disponível */
-    max-width: 400px; /* Limite máximo de largura da tabela */
-    align-items: center;
+    margin-bottom: 2em;
 }
 
-.table-style-periodo {
-    width: 100%; /* Ajustar a largura da tabela para ocupar o espaço disponível */
-    border-collapse: collapse;
-    margin: 0 auto; /* Centralizar a tabela horizontalmente */
-    max-width: 400px;
-    font-family: "Inter", sans-serif;
-    border: 2px solid var(--bg-red-1);
-    border-radius: 1px; 
-    overflow: hidden; 
-    text-align: center;
-    border-color: #fd0303;
-    border-radius: 9px;
-    border-width: 1px;
-    padding: 8px;
-    width: 400px;
-    height: 8%;
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
-    overflow: hidden;
-    align-items: center;
+tr {
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
-.table-style-rent {
-    width: 100%; /* Ajustar a largura da tabela para ocupar o espaço disponível */
-    border-collapse: collapse;
-    margin: 0 auto; /* Centralizar a tabela horizontalmente */
-    max-width: 400px;
-    font-family: "Inter", sans-serif;
-    border: 2px solid var(--bg-red-1);
-    border-radius: 1px; 
-    overflow: hidden; 
-    text-align: center;
-    border-color: #fd0303;
-    border-radius: 9px;
-    border-width: 1px;
-    padding: 8px;
-    width: 400px;
-    height: 8%;
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
-    overflow: hidden;
-    align-items: center;
-}
-
-.table-style {
-    width: 100%; /* Ajustar a largura da tabela para ocupar o espaço disponível */
-    border-collapse: collapse;
-    margin: 0 auto; /* Centralizar a tabela horizontalmente */
-    max-width: 400px;
-    font-family: "Inter", sans-serif;
-    border: 2px solid var(--bg-red-1);
-    border-radius: 1px; 
-    overflow: hidden; 
-    text-align: center;
-    border-color: #fd0303;
-    border-radius: 9px;
-    border-width: 1px;
-    padding: 8px;
-    width: 400px;
-    height: 8%;
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
-    overflow: hidden;
-    align-items: center;
-    margin-left: 440px;
-}
-
-.content {
-    display: flex; /* Organiza os elementos horizontalmente */
-    justify-content: center; /* Centraliza a tabela horizontalmente */
-    align-items: center; /* Alinha verticalmente ao centro */
-    width: 100%; /* Ocupa 100% da largura da seção */
-    gap: 40px; /* Espaçamento entre a imagem, tabela e a outra imagem */
-}
-
-/* Estilos da tabela */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto; 
-    max-width: 400px;
-    font-family: "Inter", sans-serif;
-    border: 2px solid var(--bg-red-1);
-    border-radius: 1px; 
-    overflow: hidden; 
-    text-align: center;
-    align-items: center;
-}
-
-/* Cabeçalho da tabela */
-thead {
-    background-color: white;
-    font-weight: bold;
-}
-
-/* Células do cabeçalho */
-th {
-    color: #828282;
-    text-align: center;
-    font-family: "Inter-Black", sans-serif;
-    font-size: 18px;
-    font-weight: 900;
-}
-
-/* Estilo das células do corpo da tabela */
-tbody td {
-    padding: 10px;
-    font-size: 15px;
-    text-align: center;
-    border-bottom: 2px solid var(--bg-red-1); 
-    border-right: 2px solid var(--bg-red-1); 
-}
-
-/* Remove a borda da última célula em cada linha */
-tbody td:last-child {
-    border-right: none;
-}
-
-/* Negrito na primeira coluna */
-tbody td:first-child {
-    font-weight: bold;
-}
-
-/* Estilo ao passar o mouse */
-tbody tr:hover {
-    background-color: #f9f9f9; /* Alteração de cor ao passar o mouse */
-}
-
-/* Imagens das tabelas */
-.container {
+.image-right, .image-left {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-
-.image-left {
-    grid-column: 1;
-    position: absolute;
-    left: 209px;
-}
-
-.titulo-style {
-    text-align: center;
-}
-
-.table-style {
-    grid-column: 2; /* Segunda coluna */
-}
-
-.image-right {
-    grid-column: 3; /* Terceira coluna */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-thead {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    align-items: center;
+    flex-direction: column;
 }
 
 .combo-title {
-    font-weight: bold;
-    text-align: center;
-}
-
-
-/* Footer */
-footer {
-    background-color: white;
-    padding: 40px 0;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-.footer-title {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-SemiBold", sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.links-style {
-    color: #555555;
-    text-align: left;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.copyright {
-    color: #555555;
-    text-align: left;
-    font-family: "Inter-Medium", sans-serif;
-    font-size: 17px;
-    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 8em;
+    margin-bottom: 3em;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 0 20px;
-    text-align: left;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-section {
-    flex: 1;
-    margin: 0 15px;
-    min-width: 200px;
+.footer-section-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 8px;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.footer-section.logo img {
-    width: 80px;
-    margin-bottom: 10px;
+#logo-footer {
+    margin-bottom: 1.5em;
 }
 
 .footer-bottom {
-    max-width: 1200px;
-    margin: 20px auto 0;
-    margin-top: 50px;
-    padding-top: 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0 20px;
+    justify-content: center;
 }
 
-/* Estilos para os ícones sociais no footer */
-.footer-bottom .social-icon {
-    font-size: 24px; 
-    color: var(--bg-red-1); 
-    margin-right: 15px; 
-    transition: color 0.3s ease; 
+#main-menu li a, #useful-links li a, li {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
 }
 
-.footer-bottom .social-icon:hover {
-    color: #333; 
+#main-menu li a:hover, #useful-links li a:hover {
+    font-weight: bold;
 }
 
-
-.social-icons {
-    display: flex;
-    justify-content: flex-start;
+.container div button {
+    margin-right: 20px;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    color: var(--bg-red-1);
-}
-
-.footer-bottom p {
-    margin-top: 0;
-    text-align: right;
-    flex: 1;
-}
-
-/* Ajustes para telas menores */
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
-    .footer-container {
+    #logo-ifood {
+        width: 30vw;
+    }
+
+    #menu-nav {
+        gap: 1em;
+    }
+
+    .btn-contato {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+
+    #header-home {
+        font-size: 2.5em;
+    }
+
+    #header-home2 {
+        font-size: 2em;
+    }
+
+    #paragrafo-home {
+        font-size: 1em;
+        max-width: 100%;
+    }
+
+    #container-categoria, .container-rent, .footer-container {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 2em;
     }
 
-    .footer-section {
-        margin-bottom: 20px;
+    #filtrarperiodo, #filtrarcategoria, #rentabilidade {
+        margin-top: 0em;
+    }
+    
+
+    #logo-footer {
+        max-width: 20vw;
     }
 
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
+    #chart {
+        max-width: 100%;
     }
 
-    .footer-bottom p {
-        text-align: center;
-        margin-top: 10px;
+    .titulo-filtro {
+        font-size: 2em;
     }
-
-    .social-icons {
-        justify-content: center;
-    }
-}
-
-/* Estilos para a barra vermelha */
-.container {
-    margin: 20px 0; 
-    position: relative; 
-    text-align: left;
-}
-
-.red-bar {
-    width: 9px; /* Largura da barra */
-    height: 100%; /* Altura da barra ajustável */
-    background-color: #fd0303; /* Cor da barra */
-    position: absolute; /* Faz a barra se posicionar de forma independente */
-    left: 0; /* Alinha a barra à esquerda do container */
-    top: 0; /* Alinha a barra ao topo */
-}
-
-.text-content {
-    padding-left: 4px; /* Espaço entre a barra e o texto */
-    font-size: 1.2rem; /* Tamanho do texto */
-    line-height: 1; /* Altura da linha para o espaçamento adequado */
-    display: inline-block; /* Garante que o texto ocupe o espaço necessário */
-    text-align: left;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .text-content {
-        font-size: 1rem;
-    }
-
-    div a img {
-        width: 25%;
-    }
-
-    .container-grafico-tabela {
-        flex-direction: column; /* Alinha os itens verticalmente em telas menores */
-    }
-
-    .table-style-periodo, .table-style-rent {
-        width: 100%; /* Faz com que a tabela ocupe 100% da largura disponível */
-        max-width: none; /* Remove o limite máximo de largura */
-    }
-
-    .table-style {
-        margin-left: 0; /* Remove a margem à esquerda para alinhar corretamente */
-    }
-}
-
-.container-grafico-tabela {
-    display: flex;
-    justify-content: center; /* Centraliza o gráfico e a tabela */
-    align-items: center; /* Alinha verticalmente ao centro */
-    gap: 40px; /* Espaçamento controlado entre o gráfico e a tabela */
-}
-
-.grafico {
-    flex: 1;
 }
